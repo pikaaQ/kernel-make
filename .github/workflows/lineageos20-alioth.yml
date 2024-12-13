@@ -1,4 +1,4 @@
-name: 编译Lineage OS红米K40-Kernelsu-Lxc-Docker内核
+name: 编译Lineage20红米K40-Kernelsu-Lxc-Docker内核
 
 on:
   workflow_dispatch:
