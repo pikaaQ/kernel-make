@@ -27,7 +27,7 @@ jobs:
     - name: 下载内核源码
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
-        git clone https://github.com/EngMoPro/android_kernel_xiaomi_alioth.git android-kernel --depth=1
+        git clone https://github.com/wu17481748/android_kernel_xiaomi_alioth.git android-kernel --depth=1
 
 
     - name: 开启lxc和docker配置
