@@ -30,12 +30,12 @@ jobs:
         git clone https://github.com/wu17481748/android_kernel_xiaomi_alioth.git android-kernel --depth=1
 
 
-    - name: 开启lxc和docker配置
-      run: |
-        cd $GITHUB_WORKSPACE/kernel_workspace
-        wget https://github.com/wu17481748/lxc-docker/releases/download/lxc-docker-2config/LXC-DOCKER-OPEN-CONFIG.sh
-        chmod 777 LXC-DOCKER-OPEN-CONFIG.sh
-        ./LXC-DOCKER-OPEN-CONFIG.sh android-kernel/arch/arm64/configs/alioth-x_defconfig -w
+    # - name: 开启lxc和docker配置
+    #   run: |
+    #     cd $GITHUB_WORKSPACE/kernel_workspace
+    #     wget https://github.com/wu17481748/lxc-docker/releases/download/lxc-docker-2config/LXC-DOCKER-OPEN-CONFIG.sh
+    #     chmod 777 LXC-DOCKER-OPEN-CONFIG.sh
+    #     ./LXC-DOCKER-OPEN-CONFIG.sh android-kernel/arch/arm64/configs/alioth-x_defconfig -w
 
     - name: 安装 ksu
       run: |
